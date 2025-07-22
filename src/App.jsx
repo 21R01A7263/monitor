@@ -16,11 +16,11 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div style={{ padding: '40px', fontFamily: 'Arial, sans-serif', fontSize: '32px' }}>
       {loading ? (
         <div>Loading...</div>
       ) : changedAt ? (
-        <div>Class changed at: <span className="font-bold">{changedAt}</span></div>
+        <div>Class changed at: <span style={{ fontWeight: 'bold' }}>{changedAt}</span></div>
       ) : (
         <div>No change detected yet.</div>
       )}
